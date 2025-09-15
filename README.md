@@ -1,0 +1,2 @@
+# Generative-Ad-Copy-Chatbot-for-Paid-Media-Using-Knowledge-Graphs-and-GraphRAG
+🚀 Marketify AI is a Streamlit application that combines Knowledge Graphs (Neo4j) with Generative AI (GraphRAG) to analyze and generate high-performing ad copies.  This project was developed as part of my Master’s thesis, focusing on Graph Retrieval-Augmented Generation (GraphRAG) to improve ad insights, keyword discovery, and creative generation.
