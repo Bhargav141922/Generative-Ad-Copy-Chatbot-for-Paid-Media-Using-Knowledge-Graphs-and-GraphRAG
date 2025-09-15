@@ -41,15 +41,89 @@ python data_preprocessing/preprocess_data.py
 
 # 5. Run the application
 streamlit run graph_app/streamlit_app.py
+```
+---
 
-## ✨ Features
+ ### ✨ Features
 
-1. GraphRAG Implementation → Combines knowledge graphs with retrieval-augmented generation
+- GraphRAG Implementation → Combines knowledge graphs with retrieval-augmented generation
+- Multi-LLM Support → Works with Groq, Gemini, and OpenRouter models
+- Neo4j Integration → All data stored and queried through a knowledge graph
+- Streamlit UI → Clean, interactive interface for exploring ad performance
+- Synthetic Data → Safe, generated dataset for research purposes
 
-2. Multi-LLM Support → Works with Groq, Gemini, and OpenRouter models
+---
+## 📂 Project Structure
+```
+├── data_generation/
+│   ├── __init__.py
+│   └── generate_data.py
+├── data_preprocessing/
+│   ├── __init__.py
+│   └── preprocess_data.py
+├── graph_app/
+│   ├── __init__.py
+│   ├── streamlit_app.py
+│   └── requirements.txt
+├── data/
+│   ├── raw/
+│   ├── clean/
+│   ├── import/
+│   └── import_bulk/
+├── assets/
+│   └── logo.png
+├── .env.example
+└── README.md
+```
+---
+### ⚙️ Setup Details
 
-3. Neo4j Integration → All data stored and queried through a knowledge graph
+- Environment Setup → Create a virtual environment and install dependencies
+- API Configuration → Add your API keys to the .env file
+- Data Generation → Create synthetic ad performance data
+- Data Processing → Prepare data for Neo4j import
+- Neo4j Setup → Import processed data and create indexes
+- Application Launch → Start the Streamlit interface
+---
+### 🔎 Usage Examples
+#### Find Top Performing Ads:
 
-4. Streamlit UI → Clean, interactive interface for exploring ad performance
+- "Show me the best performing gym ads in Berlin"
+- "Top 5 hair salon ads in New York"
 
-5. Synthetic Data → Safe, generated dataset for research purposes
+#### Keyword Analysis:
+
+- "What keywords are most effective for Italian restaurants?"
+- "Show keyword usage for digital marketing agencies"
+
+#### Ad Analysis:
+
+- "Explain ad with ID [ad_id]"
+- "Show me ads containing free trial"
+
+---
+### 📌 Supported Industries
+- Gym / Fitness Centers
+- Hair Salons
+- Roofing Companies
+- Online Clothing Boutiques
+- Italian Restaurants
+- Digital Marketing Agencies
+- Local Coffee Shops
+- Plumbing Services
+- Yoga Studios
+- Pet Grooming Services
+
+---
+### 🛠️ Technical Stack
+
+- **Backend** → Python, Neo4j Graph Database
+- **Frontend** → Streamlit
+- **LLM Integration** → Google Gemini, Groq, OpenRouter
+- **Data Processing** → Pandas, NumPy
+- **Visualization** → Matplotlib, Seaborn
+
+### 📜 License
+
+This project is part of academic research.
+Please contact the author for usage permissions.
