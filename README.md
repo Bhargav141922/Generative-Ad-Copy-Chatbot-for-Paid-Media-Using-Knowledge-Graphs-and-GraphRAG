@@ -41,3 +41,15 @@ python data_preprocessing/preprocess_data.py
 
 # 5. Run the application
 streamlit run graph_app/streamlit_app.py
+
+## ✨ Features
+
+1. GraphRAG Implementation → Combines knowledge graphs with retrieval-augmented generation
+
+2. Multi-LLM Support → Works with Groq, Gemini, and OpenRouter models
+
+3. Neo4j Integration → All data stored and queried through a knowledge graph
+
+4. Streamlit UI → Clean, interactive interface for exploring ad performance
+
+5. Synthetic Data → Safe, generated dataset for research purposes
